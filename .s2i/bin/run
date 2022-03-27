@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+echo "..(A) estoy en run de openshift-php-ex "
+#
+/usr/libexec/s2i/run
+#
+echo "..........(z) termine de ejecutar el run"
+#
