@@ -31,7 +31,6 @@ metadata:
   labels:
     samples.operator.openshift.io/managed: "true"
   name: do288-php-app
-  namespace: kzpjth-template
   resourceVersion: "16507"
   selfLink: /apis/template.openshift.io/v1/namespaces/openshift/templates/cakephp-mysql-example
   uid: f33b0221-69b3-493f-abe4-865d224fdf6e
