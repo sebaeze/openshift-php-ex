@@ -123,13 +123,6 @@ objects:
     selector:
       name: ${NAME}
     strategy:
-      recreateParams:
-        pre:
-          execNewPod:
-            command:
-            - ./migrate-database.sh
-            containerName: cakephp-mysql-example
-          failurePolicy: Retry
       type: Recreate
     template:
       metadata:
