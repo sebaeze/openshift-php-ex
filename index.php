@@ -46,7 +46,8 @@
 
 <b>
 <?php
-  $db = mysqli_connect("$db_host:$db_port", $db_username, $db_password);
+  // $db = mysqli_connect("$db_host:$db_port", $db_username, $db_password);
+  $db = mysqli_connect("$db_service:$db_port", $db_username, $db_password);
 
   if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
