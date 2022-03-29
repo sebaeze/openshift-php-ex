@@ -46,12 +46,14 @@
 
 <b>
 <?php
-  $db = mysqli_connect("$db_host:$db_port", $db_username, $db_password);
+  //
+  // $db = mysqli_connect("$db_host:$db_port", $db_username, $db_password);
+  $db = mysqli_connect("$db_service:$db_port", $db_username, $db_password);
 
   if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
   }
-  echo "Connected to MySQL host $db_host:$db_port<br/>";
+  echo "...(B) Connected to MySQL host $db_host:$db_port<br/>";
 
   if (!mysqli_select_db($db , $db_name)) {
     die("Database $db_name not accessible!<br/>");
